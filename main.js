@@ -1,7 +1,7 @@
 // Javascript Document
 
 // accessing the JSON file using a XMLHttpRequest object
-let requestURL = 'https://sourav-patteri.github.io/JS-Lab-4/products.json';
+let requestURL = 'https://sourav-patteri.github.io/Module-4-Project/products.json';
 
 //a callback function that access the information using jsonObj and adds product information to the web page
 function displayProducts(jsonObj) {
@@ -16,7 +16,7 @@ function displayProducts(jsonObj) {
         let img = document.createElement('img');
         let p1 = document.createElement('p');
         let p2 = document.createElement('p');
-        img.src = `https://sourav-patteri.github.io/JS-Lab-4/img/${products[i].image}`;
+        img.src = `https://sourav-patteri.github.io/Module-4-Project/img/${products[i].image}`;
         img.alt = `${products[i].name}`;
         h2.textContent = `${i+1}) ${products[i].name}`;
         p1.textContent = `Price - ${products[i].price}$`;
