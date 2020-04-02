@@ -1,12 +1,9 @@
 // Javascript Document
-
-// accessing the JSON file using a XMLHttpRequest object
-let requestURL = 'https://sourav-patteri.github.io/Module-4-Project/products.json';
-
+let main = document.querySelector('main');
 //a callback function that access the information using jsonObj and adds product information to the web page
 function displayProducts(jsonObj) {
     let products = jsonObj.products;
-    let main = document.querySelector('main');
+
     let section = document.createElement('section');
     for (let i = 0; i < products.length; i++) {
         //create HTML elements dynamically for each product in the JSON Result object.
@@ -38,6 +35,7 @@ function displayProducts(jsonObj) {
     }
 }
 
+let requestURL = 'https://sourav-patteri.github.io/Module-4-Project/products.json';
 //a function that accesses the information from the server using an XMLHTTPRequest (XHR) object with params for URL and callback function
 function loadAsset(requestURL) {
     return new Promise(function(resolve, reject) {
@@ -45,12 +43,12 @@ function loadAsset(requestURL) {
         //creating new XMLHttpRequest object, it will allow us to fetch data without a page refresh
         let request = new XMLHttpRequest();
         //opening a new request
-        request.open('GET', requestURL);
+        request.open('GET', requestURL); // accessing the JSON file using a XMLHttpRequest object
         //response type
         request.responseType = 'json';
 
         request.onload = function() {
-            if (request.status === 200) {
+            if (request.status === 200) {//200 is either loading or done
                 resolve(request.response);
             } else {
                 // If it fails, reject the promise with a error message
@@ -72,10 +70,7 @@ async function getProducts() {
         let productsPromise = await loadAsset(requestURL);
         displayProducts(productsPromise);
     } catch (e) {
-        console.log(e);
+        main.append(e);
     }
-
 }
-
-//invoking getProducts function
-getProducts();
+getProducts(); //invoking getProducts function
