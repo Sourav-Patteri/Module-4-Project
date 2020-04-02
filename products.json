@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "name": "Nothing",
+      "price": 6.98,
+      "details": "What do you get for the person who has everything? Nothing—literally. Ultimate in minimalism.",
+      "image": "product1.jpg"
+    },
+    {
+      "name": "Airzooka Air Blaster",
+      "price": 24.99,
+      "details": "AirZooka is the \"fun blaster\" that blows a harmless ball of air up to 20 feet! Just point and shoot a ball of air and have a blast! This is the perfect indoor fun for family game night.",
+      "image": "product2.jpg"
+    },
+    {
+      "name": "A baby mop",
+      "price": 29.99,
+      "details": "Dress your young one in a Baby mop and set him down on any hard wood or tile floor that needs cleaning.",
+      "image": "product3.jpg"
+    },
+    {
+      "name": "A tennis ball with a head strap",
+      "price": 5.28,
+      "details": "Boxing Reflex Ball Fight Ball with Adjustable Headband for Reflex Speed Training Boxing Punch Exercise Training to Improve Reactions and Speed, Boxing Gym Equipment for Both Training and Fitness.",
+      "image": "product4.jpg"
+    },
+    {
+      "name": "Intex Inflat-A-Bull, Inflatable Ride-On Pool Toy",
+      "price": 44.00,
+      "details": "Intex Inflat-A-Bull, Inflatable Ride-On Pool Toy with Realistic Printing. Bull float offers endless fun and laughs while the outer ring ensures safety and balance. 98''L x 77''w x 32''h, It's made of heavy-duty, 17.5-gauge PVC vinyl. Can support up to 220 pounds.",
+      "image": "product5.jpg"
+    }
+  ]
+}
